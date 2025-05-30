@@ -22,6 +22,14 @@ public sealed class RelationFinderTests
     }
 
     [Fact]
+    public void Level_Is_Three_For_Grace_To_Alan_Red_Test()
+    {
+        var rf = new RelationFinder();
+        rf.Init(_data);
+        Assert.Equal(2, rf.FindMinRelationLevel(_data[0], _data[2]));
+    }
+
+    [Fact]
     public void Level_Is_Zero_For_Same_Record()
     {
         var rf = new RelationFinder();
