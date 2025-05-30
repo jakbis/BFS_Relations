@@ -14,7 +14,7 @@ public sealed class RelationFinderTests
     };
 
     [Fact]
-    public void Level_Is_Two_For_Grace_To_Alan()
+    public void Level_Is_Two_For_Grace_To_Alan() 
     {
         var rf = new RelationFinder();
         rf.Init(_data);
